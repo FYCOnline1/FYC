@@ -1,115 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FYC</title>
-<link rel="shortcut icon" href="FYC Rewrite.ico" /><body>
+<center><h1>FYC://Music</h1></center>
+<style>
+/* Styling for the sidebar */
+.sidebar {
+width: 20%;
+height: 100%;
+background-color: #222;
+position: fixed;
+left: 0;
+top: 0;
+overflow-x: hidden;
+padding-top: 20px;
+transition: all 0.5s ease;
+}
+
+/* Styling for the button */
+.button {
+background-color: transparent;
+border: none;
+color: #f1f1f1;
+text-align: left;
+font-size: 16px;
+font-weight: bold;
+font-family: 'Ubuntu', sans-serif;
+cursor: pointer; 
+width: 100%;
+height: 50px;
+margin-bottom: 5px;
+}
+
+/* Styling for the button when hovered */
+.button:hover {
+background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Styling for the sidebar in dark mode */
+body {
+background-color: #222;
+color: #f1f1f1;
+}
+
+/* Styling for the sidebar in dark mode */
+.sidebar {
+background-color: #222;
+}
+
+/* Styling for the button text in dark mode */
+.button {
+color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+<!-- Sidebar -->
+<div class="sidebar">
+
+
+
+
+<!-- Home -->
+<button class="button" onclick="window.location.href='index.html'">Home</button>
+
+<!-- Home -->
+<button class="button" onclick="window.location.href='MusicFreeWare.html'">Music FreeWare</button>
+
+<!-- Home -->
+<button class="button" onclick="window.location.href='023 Week 11 - New Music Releases (NMR)'">023 Week 11</button>
+
+<!-- Home -->
+<button class="button" onclick="window.location.href='Walter Trout - Deep Trout (2005 Blues) [Flac 16-44].html'">Walter Trout - Deep Trout</button>
+
+
+
+
+</div>
+
+<!-- Content -->
+<div style="margin-left: 20%;">
+<link rel="shortcut icon" href="FYC Rewrite.ico" />
 <style>
 body {
-  background-image: url('With\ Credit\ Protogen.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+background-image: url('With\ Credit\ Protogen.png');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
 }
-</style> 
-<body style="background-color:rgb(64, 64, 64);">
-</head>
-<body>
-<center><h1>FYC://Music</h1></center>
-<center><h1>=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=</h1></center>
 
-<!--Home-->
-<style> 
-.button {
-background-color: rgb(89, 95, 89);
-border: 2px solid rgb(0, 0, 0);
-color: rgb(0, 0, 0);
-padding: 40px 68px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 40px;
-margin: 4px 2px;
-cursor: pointer;
-border-radius: 12px;
-transition: transform 0.2s ease-out;
-outline: 2px solid white;
-}
-.button:hover {
-transform: scale(1.05);
-}
-.button:hover, .button:focus {
-outline-offset: 0px;
+/* Hide the photos by default */
+/* DO NOT EDIT THE CODE IT WILL STOP WORKING */
+.photo {
+display: none;
 }
 </style>
 </head>
-<body>
-<a href="index.html" class="button"><center>Home</center></a>
-<!--End-->
+<body style="background-color:rgb(64, 64, 64);" onkeydown="handleKeyDown(event)">
 
-<!--FreeWare-->
-<style> 
-.button {
-background-color: rgb(89, 95, 89);
-border: none;
-color: rgb(0, 0, 0);
-padding: 40px 68px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 40px;
-margin: 4px 2px;
-cursor: pointer;
-border-radius: 12px;
+<center><p class="photo"><img src="DJ.png" width="350" height="600"></p></center>
+<center><p class="photo"><img src="fyclogo.gif" width="399" height="100"></p></center>
+<script>
+function handleKeyDown(event) {
+if (event.key === "p") {
+// Show the photos when "p" key is pressed
+var photos = document.querySelectorAll(".photo");
+photos.forEach(function(photo) {
+photo.style.display = "block";
+});
 }
-</style>
-</head>
-<body>
-<a href="MusicFreeWare.html" class="button"><center>Freeware</center></a></center> 
-<!--End--> 
+}
+</script>
+</div>
 
-<!--2023 Week 11 - New Music Releases (NMR)-->
-<style> 
-.button {
-background-color: rgb(89, 95, 89);
-border: none;
-color: rgb(0, 0, 0);
-padding: 40px 68px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 40px;
-margin: 4px 2px;
-cursor: pointer;
-border-radius: 12px;
-}
-</style>
-</head>
-<body>
-<a href="2023 Week 11 - New Music Releases (NMR).html" class="button"><center>2023 Week 11 - New Music Releases (NMR)</center></a></center> 
-<!--End--> 
-
-<!--Walter Trout - Deep Trout (2005 Blues) [Flac 16-44]-->
-<style> 
-.button {
-background-color: rgb(89, 95, 89);
-border: none;
-color: rgb(0, 0, 0);
-padding: 40px 68px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 40px;
-margin: 4px 2px;
-cursor: pointer;
-border-radius: 12px;
-}
-</style>
-</head>
-<body>
-<a href="Walter Trout - Deep Trout (2005 Blues) [Flac 16-44].html" class="button"><center>Walter Trout - Deep Trout (2005 Blues) [Flac 16-44]</center></a></center> 
-<!--End--> 
+<!-- Import the Ubuntu Bold font -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap">
 </body>
 </html>
